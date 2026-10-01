@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semaforo triage</title> 
+</head>  
+     <p>reanimacion</p>
+     <p style="color: red;">Texto rojo</p>
+     <p>emergencia</p>
+     <p style="color: orange;">Texto naranja</p>
+     <p>urgencia</p>
+     <p style="color: yellow;">Texto amarillo</p>
+     <p>urgencia menor</p>
+     <p style="color: green;">Texto verde</p>
+     <p>sin urgencia</p>
+     <p style="color: blue;">Texto azul</p>
+<body> 
+    <><>
+    
+</html> 
