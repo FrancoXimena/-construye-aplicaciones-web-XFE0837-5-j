@@ -1,6 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Técnico de Computadoras</title>
+</head>
 <body>
-<title>
-<metadatos>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Soporte Técnico de Computadoras</h1>
+        <p>Soluciones rápidas y efectivas para tus equipos informáticos</p>
+    </header>
+
+    <hr>
+
+    <!-- Barra de Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#soporte">Solicitar Soporte</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <!-- Cuerpo Principal -->
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="inicio">
+            <h2>Bienvenido a nuestro Centro de Soporte</h2>
+            <p>Ofrecemos servicio técnico especializado para laptops, computadoras de escritorio y mantenimiento de software/hardware.</p>
+        </section>
+
+        <!-- Sección de Servicios -->
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Mantenimiento preventivo y correctivo</li>
+                <li>Eliminación de virus y malware</li>
+                <li>Instalación y actualización de sistemas operativos</li>
+                <li>Reparación y cambio de componentes (RAM, Disco Duro, Pantallas)</li>
+                <li>Optimización de rendimiento</li>
+            </ul>
+        </section>
+
+        <!-- Sección del Formulario de Soporte -->
+        <section id="soporte">
+            <h2>Formulario de Solicitud de Soporte Técnico</h2>
+            <form action="#" method="post">
+                
+                <!-- Datos del Cliente -->
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    
+                    <label for="nombre">Nombre completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="telefono">Teléfono de contacto:</label><br>
+                    <input type="tel" id="telefono" name="telefono"><br><br>
+                </fieldset>
+
+                <br>
+
+                <!-- Detalles del Equipo y Problema -->
+                <fieldset>
+                    <legend>Detalles del Equipo y Falla</legend>
+
+                    <label for="tipo-equipo">Tipo de equipo:</label><br>
+                    <select id="tipo-equipo" name="tipo_equipo" required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="laptop">Laptop / Portátil</option>
+                        <option value="desktop">Computadora de Escritorio (PC)</option>
+                        <option value="allinone">All in One (Todo en uno)</option>
+                        <option value="otro">Otro</option>
+                    </select><br><br>
+
+                    <label for="sistema-op">Sistema Operativo:</label><br>
+                    <select id="sistema-op" name="sistema_operativo">
+                        <option value="windows">Windows</option>
+                        <option value="macos">macOS</option>
+                        <option value="linux">Linux</option>
+                        <option value="otro">Otro / No sé</option>
+                    </select><br><br>
+
+                    <label for="tipo-servicio">Tipo de servicio requerido:</label><br>
+                    <input type="checkbox" id="mantenimiento" name="servicio[]" value="mantenimiento">
+                    <label for="mantenimiento">Mantenimiento general</label><br>
+
+                    <input type="checkbox" id="virus" name="servicio[]" value="virus">
+                    <label for="virus">Limpieza de virus</label><br>
+
+                    <input type="checkbox" id="hardware" name="servicio[]" value="hardware">
+                    <label for="hardware">Falla de hardware (piezas)</label><br>
+
+                    <input type="checkbox" id="software" name="servicio[]" value="software">
+                    <label for="software">Instalación de programas / SO</label><br><br>
+
+                    <label for="prioridad">Nivel de Urgencia:</label><br>
+                    <input type="radio" id="baja" name="prioridad" value="baja">
+                    <label for="baja">Baja</label><br>
+
+                    <input type="radio" id="media" name="prioridad" value="media" checked>
+                    <label for="media">Media</label><br>
+
+                    <input type="radio" id="alta" name="prioridad" value="alta">
+                    <label for="alta">Alta</label><br><br>
+
+                    <label for="descripcion">Descripción detallada del problema:</label><br>
+                    <textarea id="descripcion" name="descripcion" rows="5" cols="40" placeholder="Escribe aquí lo que le sucede a tu equipo..." required></textarea><br><br>
+                </fieldset>
+
+                <br>
+
+                <!-- Botones -->
+                <input type="submit" value="Enviar Solicitud">
+                <input type="reset" value="Limpiar Formulario">
+
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Footer / Pie de Página -->
+    <footer id="contacto">
+        <h3>Contacto y Ubicación</h3>
+        <p><strong>Dirección:</strong> Av. Principal #123, Ciudad</p>
+        <p><strong>Horario de atención:</strong> Lunes a Viernes de 8:00 AM a 6:00 PM</p>
+        <p>&copy; 2026 Soporte Técnico de Computadoras. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
