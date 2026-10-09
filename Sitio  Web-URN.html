@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Académica del Norte - Portal Institucional</title>
+    <style>
+        /* Estilos Generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Encabezado y Navegación */
+        header {
+            background-color: #1a365d;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #63b3ed;
+        }
+
+        /* Banner Principal (Hero) */
+        .hero {
+            background: linear-gradient(rgba(26, 54, 93, 0.8), rgba(26, 54, 93, 0.8)), 
+                        url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80') center/cover;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 1.5rem auto;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: #3182ce;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #2b6cb0;
+        }
+
+        /* Sección de Oferta Académica */
+        .container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1a365d;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid #3182ce;
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+            color: #2d3748;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con logo y menú de navegación -->
+    <header>
+        <a href="#" class="logo">🎓 UAN - Portal Académico</a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#oferta">Oferta Educativa</a></li>
+                <li><a href="#admisiones">Admisiones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="hero" id="inicio">
+        <h1>Universidad Académica del Norte</h1>
+        <p>Formando profesionales de excelencia para responder a los retos del futuro.</p>
+        <a href="#oferta" class="btn-primary">Ver Carreras</a>
+    </section>
+
+    <!-- Sección principal de contenido -->
+    <main class="container">
+        <h2 class="section-title" id="oferta">Nuestra Oferta Educativa</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Licenciaturas e Ingenierías</h3>
+                <p>Programas de grado diseñados para desarrollar habilidades prácticas y teóricas competitivas en el mercado actual.</p>
+            </div>
+
+            <div class="card">
+                <h3>Posgrados y Maestrías</h3>
+                <p>Especializaciones avanzadas que impulsan el desarrollo profesional e investigación de alto nivel.</p>
+            </div>
+
+            <div class="card">
+                <h3>Educación Continua</h3>
+                <p>Cursos, diplomados y talleres enfocados en la actualización permanente y aprendizaje flexible.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Universidad Académica del Norte. Proyecto de práctica de desarrollo web.</p>
+    </footer>
+
+</body>
+</html>
